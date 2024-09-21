@@ -1,0 +1,1 @@
+# Crie uma tupla que contenha outras duas tuplas: (1,2) e (3,4)
