@@ -1,16 +1,29 @@
-# Curso Intermediário de PYTHON
-# Nome da desenvolvedora: Vanessa Marujo Nogueira
-# Versão 1.0
-# Exercício de lógica de programação com a linguagem de programação PYTHON
-# Exercício de Lista
 
-#Uma lista simples
-list1= [1,2,"Python","Programa",15.9]
-list2= ["Amy","Ryan","Henry","Emma"]
-
-#imprimindo a lista
-print(list1)
-print(list2)
-#imprimindo o tipo de lista
-print(type(list1))
-print(type(list2))
+from tkinter import *
+from tkinter import messagebox   
+  
+top = Tk()  
+  
+top.geometry("200x100")  
+  
+def fun():  
+    messagebox.showinfo("Hello", "Red Button clicked")  
+  
+  
+b1 = Button(top,text = "Red",command = fun,activeforeground = "red",activebackground = "pink",pady=10)  
+  
+b2 = Button(top, text = "Blue",activeforeground = "blue",activebackground = "pink",pady=10)  
+  
+b3 = Button(top, text = "Green",activeforeground = "green",activebackground = "pink",pady = 10)  
+  
+b4 = Button(top, text = "Yellow",activeforeground = "yellow",activebackground = "pink",pady = 10)  
+  
+b1.pack(side = LEFT)  
+  
+b2.pack(side = RIGHT)  
+  
+b3.pack(side = TOP)  
+  
+b4.pack(side = BOTTOM)  
+  
+top.mainloop()  
